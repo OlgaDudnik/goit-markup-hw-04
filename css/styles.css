@@ -113,15 +113,37 @@ ul {
   color: var(--accent-color);
 }
 
+.header-contacts > li:first-child {
+  margin-right: 50px;
+}
+
+.header-mailto-icon {
+  margin-right: 10px;
+}
+
+.header-mailto-icon {
+  fill: currentColor;
+}
+
 .header-mailto {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-right: 50px;
   color: var(--main-text-color);
 }
 
+.header-mailto:hover .header-mailto-icon,
+.header-mailto:focus .header-mailto-icon,
+.header-tel:hover .header-tel-icon,
+.header-tel:focus .header-tel-icon {
+  fill: var(--accent-color);
+}
+
+.header-tel:hover,
+.header-tel:focus,
 .header-mailto:hover,
 .header-mailto:focus {
   color: var(--accent-color);
@@ -144,14 +166,34 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
+.header-tel-icon {
+  margin-right: 10px;
+}
+
+.address-tel-icon {
+  fill: currentColor;
 }
 
 /* ----------------section with banner---------------- */
+
+.main-banner {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background: url("./../images/teams.jpeg") no-repeat,
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .main-banner .container {
   display: flex;
@@ -161,7 +203,6 @@ ul {
   width: 100%;
   top: 80px;
   height: 600px;
-  background-color: var(--banner-color);
 }
 
 .main-text {
@@ -207,6 +248,16 @@ ul {
   display: flex;
 }
 
+.description > li .svg-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
 .description > li {
   width: 270px;
   display: inline-block;
@@ -219,17 +270,15 @@ ul {
 }
 
 .description h3 {
-  margin: 0 0 14px 0;
+  margin: 0;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
-
-/* li .description-title:last-child {
-  margin-right: 0;
-} */
 
 .description p {
   width: 270px;
