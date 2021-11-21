@@ -346,15 +346,45 @@ ul {
   margin: 0;
 }
 
-.our-team ul > li {
+.our-team-people + .our-team-people {
+  margin-left: 10px;
+}
+
+.employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  color: #afb1b8;
+}
+
+.our-team-icon {
+  fill: currentColor;
+}
+
+.employee:hover,
+.employee:focus {
+  background-color: var(--accent-color);
+  color: #afb1b8;
+}
+
+.employee:hover .our-team-icon,
+.employee:focus .our-team-icon {
+  fill: #fff;
+}
+
+.our-team ul.ul-teams > li {
   padding-bottom: 30px;
   margin-right: 30px;
-  width: 270px;
   text-align: center;
   background-color: var(--main-title-color);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team ul > li:last-child {
@@ -371,6 +401,7 @@ ul {
 }
 
 .our-team ul > li > p {
+  padding-bottom: 16px;
   margin: 0;
   font-size: 16px;
   line-height: 1.18;
@@ -379,7 +410,69 @@ ul {
   color: var(--main-text-color);
 }
 
-/* ----------------footer---------------- */
+/* ----------------COMPANYS---------------- */
+
+.companys-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 94px;
+}
+
+.companys-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 94px;
+}
+
+.companys-li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.companys-li:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.companys-li + .companys-li {
+  margin-left: 30px;
+}
+
+.companys-a {
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companys-icon {
+  fill: currentColor;
+}
+
+.companys-a:hover,
+.companys-a:focus {
+  color: #afb1b8;
+}
+
+.companys-li:hover .companys-icon,
+.companys-li:focus .companys-icon {
+  fill: var(--accent-color);
+}
+
+/* ----------------FOOTER---------------- */
 
 .footer {
   background-color: var(--banner-color);
