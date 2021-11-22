@@ -109,7 +109,8 @@ ul {
   padding: 32px 0;
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
 
@@ -188,8 +189,12 @@ ul {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background: url("./../images/teams.jpeg") no-repeat,
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("./../images/teams.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -369,7 +374,6 @@ ul {
 .employee:hover,
 .employee:focus {
   background-color: var(--accent-color);
-  color: #afb1b8;
 }
 
 .employee:hover .our-team-icon,
@@ -412,6 +416,11 @@ ul {
 
 /* ----------------COMPANYS---------------- */
 
+.companys {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .companys-title {
   font-weight: bold;
   font-size: 36px;
@@ -420,14 +429,12 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-top: 0;
-  padding-top: 94px;
 }
 
 .companys-ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 94px;
 }
 
 .companys-li {
